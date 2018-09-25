@@ -1,13 +1,6 @@
 import React, { Component } from "react";
 import GoodTunes from './apps/goodtunes'
-import Image1 from './apps/images/roadie.png';
-import Image2 from './apps/images/projectManager.png'
-import Roadie from './apps/roadie';
-import Project from './apps/project';
-import Nytimes from './apps/nytimes';
-import BooksMovies from './apps/books_movies';
-
-
+ 
 class Apps extends Component {
  
     styles = {

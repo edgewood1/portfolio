@@ -11,6 +11,7 @@ import Data from './components/data';
 import React_blog from './components/react_blog';
 import Apps from './components/apps';
 import Resume from './components/resume';
+import Resume2 from './components/resume2';
 import Contact from './components/contact';
 import registerServiceWorker from './registerServiceWorker';
 import {BrowserRouter, Route, Redirect} from 'react-router-dom';
@@ -29,7 +30,7 @@ ReactDOM.render(
             <Route exact path='/data' component={Data}  />
             <Route exact path='/react' component={React_blog}  />
             <Route exact path='/apps' component={Apps}  />
-            <Route exact path='/resume' component={Resume}  />
+            <Route exact path='/resume' component={Resume2}  />
             <Route exact path='/contact' component={Contact}  />
         </div>
     </BrowserRouter>, 
