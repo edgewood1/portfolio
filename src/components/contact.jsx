@@ -7,6 +7,15 @@ class Contact extends Component {
         fontSize: "20px",
         fontWeight: "bold"
     };
+ 
+    info = {
+        github: "https://github.com/edgewood1",
+        linkedin: "https://www.linkedin.com/in/mel-dejesus-a5754056?trk=nav_responsive_tab_profile",
+        wordpress: "https://code757.wordpress.com/",
+        email: "meldejesus22@gmail.com",
+        text: "919-220-8424",
+        references: ""
+    }
 
     render() {
         return (
