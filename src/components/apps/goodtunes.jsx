@@ -4,8 +4,8 @@ class Contact extends Component {
  
  
     styles = {
-        fontFamily: "Garamond",
-        fontSize: "20px",
+        // fontFamily: "Garamond",
+        // fontSize: "20px",
         fontWeight: "bold"
     };
 
@@ -14,7 +14,7 @@ class Contact extends Component {
              <div class="row">
 
                             <div class="col s12 l5 offset-l1">                                
-                                <h5> {this.props.details.title} </h5>
+                                <h5 style={this.styles}> {this.props.details.title} </h5>
                                 {console.log(this.props.title)}
                             </div>
                             <div class="col s12 l5 offset-l1">

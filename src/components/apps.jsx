@@ -5,10 +5,14 @@ class Apps extends Component {
  
     styles = {
         fontFamily: "Garamond",
-        fontSize: "200%",
+        fontSize: "250%",
         fontWeight: "bold",
         textAlign: "center"
     };
+
+    styles2 = {
+        fontWeight: "bold"
+            }
 
   details = [{
         title: "Good Tunes",

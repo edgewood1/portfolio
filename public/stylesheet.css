@@ -1,0 +1,26 @@
+
+nav {
+ background: #B79891;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #94716B, #B79891);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #94716B, #B79891); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+body {
+
+    /* background: url(images/pine.jpg) no-repeat center center fixed;
+    background-size: cover; */
+    
+    background: #EDE574;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E1F5C4, #EDE574);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E1F5C4, #EDE574); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+}
+
+p, h1, h2, h3, h4, h5, h6, a, li {
+    color:  black;
+    letter-spacing: .5px;color: #444;
+    font-size: 125%;
+}
+ 

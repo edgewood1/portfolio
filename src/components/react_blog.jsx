@@ -1,22 +1,69 @@
 import React from 'react'
- 
-    class React_blog extends React.PureComponent {
 
-        style = {
-            height: "100%",
-            marginTop: "5%"
-
-        }
+import ReactDOM from 'react-dom';
+import axios from 'axios';
+import { Link } from 'react-router-dom'
  
-        render() {
-            return (
-                <div style={this.style}>
-                <iframe src="https://edgewood1.github.io/edge/category/react" height="800px" width="100%"></iframe>
-                </div>
-            )
-        }
+class React_blog extends React.PureComponent {
+    state = {
+        hits: []
+    }
+
+    componentDidMount() {
+        
+        var url =
+        "https://api.github.com/repos/edgewood1/gatsby/contents/markdown";
+        
+         
+        axios.get(url)
+            .then(results => {
+                results = results.data
+                console.log(results)
+                var hits = results.map((element) => {
+                    console.log(element.name)
+                    return element.name
+                })
+                this.setState({hits: hits}, ()=> {
+                    console.log(this.state.hits)
+                })
+             
+        })
+
 
     }
+/// end of compDidMount
+    
+style= {
+    fontSize: '20px',
+    marginLeft: '10%'
+}
+
+    render() {
+        return (
+                        <div>
+                <h5> Blog Categories</h5>>
+                <div>
+                    <ul style={this.style}>
+                        {this.state.hits.map((elem) => 
+                         
+                            (
+                                <li>        
+                                    <Link  
+                                        to={`/one_post/${elem["ID"]}`}>{elem}
+                                    </Link>
+                                </li>
+                            )
+                            )
+                        }
+                    
+                    </ul>
+                </div>
+            </div>
+    
+        )
+    }
+
+}
 
 
 export default React_blog;

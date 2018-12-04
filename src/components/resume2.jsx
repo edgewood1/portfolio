@@ -17,14 +17,15 @@ class Apps extends Component {
     };
     large = {
         fontFamily: "Garamond",
-        fontSize: "120%",
+        fontSize: "125%",
         fontWeight: "bold",
         color: "brown"
     };
     medium = {
         fontFamily: "Garamond",
-        fontSize: "115%",
+        fontSize: "125%",
         fontWeight: "bold",
+        letterSpacing: ".5px"
         // color: "brown"
     }
 
@@ -39,12 +40,12 @@ class Apps extends Component {
           {pgm: "Full-Stack Development", 
           time: 2017,
           school: "UNC Coding Bootcamp", 
-          desc: "Both individually and as part of teams, we created apps that used theMongo/Express/React/Nodestack.  In this,weapplied additional tools such as Passport.JS, jQuery, Firebase, SQL, Auth-O, Bootstrap, Git, Materialize. We deployed the apps on Heroku."
+          desc: "Gained experience in: team-work, writing apps using the Mongo/Express/React/Node stack, and deploying on Heroku.  In the process, we used additional tools such as Passport.JS, jQuery, Firebase, SQL, Auth-O, Bootstrap, Git, Materialize."
       },{
           pgm: "Cultural Studies / Critical Theory & Analysis, M.A.",
           time: 2002,
           school: "East Carolina University", 
-          desc: "We used a range of analytical methods from across various disciplines to study the ways in which cultural forms interact with individual and communal experience."
+          desc: "We used a range of analytical methods from various disciplines to study the ways in which cultural forms interact with individual and communal experience."
       }
     ], 
     [
@@ -58,7 +59,8 @@ class Apps extends Component {
             com: "BizOps Group, AT&T",
             where: "Durham, NC",
             when: "Sep 2017- May 2018",
-            desc: ["As part of a 10-person agile team, we enhanced a range of front-end (JS/JQuery) and back-end (Perl, SQL, APIs) functionality on a high-profile internal web-based client/resource management tool,",
+            desc: ["As part of a 10-person agile team, we worked on a high-profile internal web-based client/resource management tool",
+            "enhanced a range of front-end (JS/JQuery) and back-end (Perl, SQL, APIs) functionality, ",
             "Used Jira tracking software and the Source Tree Git GUI", 
             "Wrote unit, integration, and beta tests as well as documentation, and ",
             "Participated in daily stand up meetings as well as regular code reviews."]
