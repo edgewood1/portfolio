@@ -23,7 +23,7 @@ index.js will handle rendering:
 1. import element / component
 2. render
 
-__Method 1: JSX variables or “elements”__
+___Method 1: JSX variables or “elements”___
 
 Below, we do two things:
 
