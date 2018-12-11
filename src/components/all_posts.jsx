@@ -79,7 +79,7 @@ class Blog extends React.Component {
         
         return (
             <div>
-                <h5> Blog Categories</h5>>
+                <h5> Blog Categories</h5>
                 <div>
                     <ul style={this.style}>
                         {this.state.hits.map((elem) => 
