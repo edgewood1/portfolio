@@ -49,7 +49,7 @@ style= {
                             (
                                 <li>        
                                     <Link  
-                                        to={`/one_post/${elem["ID"]}`}>{elem}
+                                        to={`/react_post/${elem}`}>{elem}
                                     </Link>
                                 </li>
                             )
