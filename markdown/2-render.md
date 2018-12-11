@@ -53,7 +53,7 @@ ReactDOM.render(element, document.getElementById("root"));
 
 _In the following examples, we will use exclude the imports and the file names._
 
-__Method 2: Component Functions w/o Arguments__
+**Method 2: Component Functions w/o Arguments**
 
 There are two kinds of components:
 
