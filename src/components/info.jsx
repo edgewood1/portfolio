@@ -21,9 +21,9 @@ class Info extends Component {
               <p>
                 {" "}
                 As a teenager, I was into fantasy novels, writing, coding, and
-                hanging with friends, and later I began college as an
-                engineering student before switching to literature and
-                philosophy, both of which I still have a deep affinity for.{" "}
+                hanging with friends. Starting college, I studied engineering
+                before switching to literature and philosophy, both of which I
+                still have a deep affinity for.{" "}
               </p>
             </div>
             <div className="col s12 offset-l0">
