@@ -23,22 +23,16 @@ var Home = require("../components/home");
 var Info = require("../components/info");
 // var Chat = require("../components/Chat");
 
-
 // Export the Routes
 module.exports = (
-
   // The high level component is the Router component
   <Router history={hashHistory}>
     <Route path="/" component={Home}>
-
       {/* If user selects Info or Chat show the appropriate component */}
       <Route path="info" component={Info} />
- 
 
       {/* If user selects any other path... we get the Info Route */}
       <IndexRoute component={Home} />
-
     </Route>
   </Router>
-
 );
