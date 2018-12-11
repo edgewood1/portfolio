@@ -38,12 +38,16 @@ style= {
     marginLeft: '10%'
 }
 
+
     render() {
         return (
-                        <div>
-                <h5> Blog Categories</h5>>
-                <div>
-                    <ul style={this.style}>
+            <div style={this.style}>
+                         <div className="container">
+            <div className="row">  
+            <p className="col offset-s3"> React Posts </p>
+            </div></div>
+            <br></br>
+                    <ul >
                         {this.state.hits.map((elem) => 
                          
                             (
@@ -58,7 +62,7 @@ style= {
                     
                     </ul>
                 </div>
-            </div>
+        
     
         )
     }

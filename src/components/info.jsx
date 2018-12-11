@@ -33,9 +33,7 @@ fontWeight: "bold"
                 </div>
                 <div className="col s12 offset-l0">
                     <p> These days, I spend most of my time exploring software / web development.  I appreciate the way
-                        this work integrates past interests while allowing for new forms of expression. </p>
-                    <p> I especially enjoy learning new computer languages and technologies for the ways they inform one another, for the kinds of applications they enable, and for the forms 
-                    of community and collaboration that they can foster. </p>
+                        this work integrates my past interests yet allows for new forms of expression, collaboration, and community. </p>
                 </div>
  
             </div>

@@ -23,7 +23,7 @@ index.js will handle rendering:
 1. import element / component
 2. render
 
-**Method 1: JSX variables or “elements”**
+*Method 1: JSX variables or “elements”*
 
 Below, we do two things:
 
@@ -53,7 +53,7 @@ ReactDOM.render(element, document.getElementById("root"));
 
 _In the following examples, we will use exclude the imports and the file names._
 
-**Method 2: Component Functions w/o Arguments**
+__Method 2: Component Functions w/o Arguments__
 
 There are two kinds of components:
 

@@ -4,7 +4,11 @@ import axios from 'axios';
 import {Fragment} from 'react';
 import {Base64} from 'js-base64';
 import ReactMarkdown from 'react-markdown';
+//react-remarkable
 var Remarkable = require('remarkable');
+var showdown = require('showdown')
+
+var converter = new showdown.Converter({metadata: true});
 var md = new Remarkable({
     html:         false,        // Enable HTML tags in source
     xhtmlOut:     false,        // Use '/' to close single tags (<br />)
@@ -55,11 +59,12 @@ console.log(url)
     axios.get(url)
       .then(res => {
           console.log(res)
-          console.log(res.data.title)
+          console.log(res.data.name)
           const content = Base64.decode(res.data.content)
         //   var content = base64.decode(this.state.content);
- 
-        this.setState({content:content, title: res.data.title}), ()=> {
+          var title = res.data.name;
+          title = title.replace('.md', '').replace('-', ' - ')
+        this.setState({content:content, title: title}), ()=> {
             console.log(this.state.content)
         }
 
@@ -79,15 +84,21 @@ textStyle= {
     marginRight: '5%',
     fontWeight: 540,
     fontFamily: "Garamond",
-    wordWrap: "break-word", 
-    whiteSpace: "pre-line", 
+    // wordWrap: "break-word", 
+    // whiteSpace: "pre-line", 
 }
 
     render() {
-        var render = md.render(this.state.content)
+        var render = converter.makeHtml(this.state.content)
+        var meta = converter.getMetadata()
+        console.log(meta)
+        // var render = md.render(this.state.content)
         console.log(render)
         return( 
-            <div style={this.textStyle}>
+            <div>
+                <div style={this.titleStyle}>
+                {this.state.title}
+                </div>
             {/* <ReactMarkdown source={this.state.content} /> */}
             <div style={this.textStyle}dangerouslySetInnerHTML={this.createMarkup(render)} />
             {/* {render} */}
