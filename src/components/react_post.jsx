@@ -54,7 +54,8 @@ class Post extends React.Component {
   
     var hits = [];
 
-    var url = "https://api.github.com/repos/edgewood1/gatsby/contents/markdown/"+id
+    // var url = "https://api.github.com/repos/edgewood1/gatsby/contents/markdown/"+id
+    var url = "https://api.github.com/repos/edgewood1/portfolio/contents/markdown/"+id
 console.log(url)
     axios.get(url)
       .then(res => {
