@@ -26,15 +26,24 @@ class React_blog extends React.PureComponent {
   }
   /// end of compDidMount
 
-  style = {
-    fontSize: "20px",
-    marginLeft: "10%"
+  titleStyle = {
+    fontSize: "150%",
+    // marginLeft: '10%',
+    textAlign: "center",
+    fontWeight: "bold"
+  };
+  textStyle = {
+    fontSize: "130%",
+    marginLeft: "5%",
+    marginRight: "5%",
+    fontWeight: 540,
+    fontFamily: "Garamond"
   };
 
   render() {
     return (
-      <div style={this.style}>
-        <div className="container">
+      <div>
+        <div className="container" style={this.titleStyle}>
           <div className="row">
             <p className="col offset-s3"> React Posts </p>
           </div>
@@ -42,7 +51,7 @@ class React_blog extends React.PureComponent {
         <br />
         <ul>
           {this.state.hits.map(elem => (
-            <li>
+            <li style={this.textStyle}>
               <Link to={`/react_post/${elem}`}>
                 {elem.replace(".md", "").replace(/[0-9]+-/, "")}
               </Link>

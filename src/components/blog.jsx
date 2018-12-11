@@ -8,11 +8,6 @@ class Blog extends React.Component {
     posts: []
   };
 
-  style = {
-    fontSize: "20px",
-    marginLeft: "10%"
-  };
-
   componentDidMount() {
     var data = [];
     var col1 = [];
@@ -46,6 +41,20 @@ class Blog extends React.Component {
     });
   }
 
+  titleStyle = {
+    fontSize: "150%",
+    // marginLeft: '10%',
+    textAlign: "center",
+    fontWeight: "bold"
+  };
+  textStyle = {
+    fontSize: "120%",
+    marginLeft: "5%",
+    marginRight: "5%",
+    fontWeight: 540,
+    fontFamily: "Garamond"
+  };
+
   render() {
     var col1 = [];
     var x;
@@ -54,15 +63,15 @@ class Blog extends React.Component {
     console.log(col1);
     return (
       <div>
-        <ul style={this.style}>
-          <div className="container">
+        <ul>
+          <div className="container" style={this.titleStyle}>
             <div className="row">
               <p className="col offset-s3"> Blog Categories </p>
             </div>
           </div>
           <br />
 
-          <div className="container">
+          <div className="container" style={this.textStyle}>
             <div className="row">
               {this.state.posts.map(el => (
                 <Link className="col s6" key={el} to={`/all_posts/${el}`}>

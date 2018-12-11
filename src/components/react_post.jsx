@@ -54,6 +54,7 @@ class Post extends React.Component {
 
   titleStyle = {
     fontSize: "150%",
+    marginTop: "5%",
     // marginLeft: '10%',
     textAlign: "center",
     fontWeight: "bold"
@@ -64,8 +65,6 @@ class Post extends React.Component {
     marginRight: "5%",
     fontWeight: 540,
     fontFamily: "Garamond"
-    // wordWrap: "break-word",
-    // whiteSpace: "pre-line",
   };
 
   render() {

@@ -59,9 +59,19 @@ class Blog extends React.Component {
     });
   }
 
-  style = {
-    fontSize: "20px",
-    marginLeft: "10%"
+  titleStyle = {
+    fontSize: "150%",
+    // marginLeft: '10%',
+    textAlign: "center",
+    fontWeight: "bold"
+  };
+  textStyle = {
+    fontSize: "130%",
+    marginLeft: "5%",
+    marginRight: "5%",
+    fontWeight: 540,
+    fontFamily: "Garamond",
+    color: "black"
   };
 
   render() {
@@ -76,15 +86,19 @@ class Blog extends React.Component {
 
     return (
       <div>
-        <h5> Blog Categories</h5>
-        <div>
-          <ul style={this.style}>
+        <p style={this.titleStyle}> Blog Categories</p>
+        <div className="container" style={this.textStyle}>
+          <div className="row">
             {this.state.hits.map(elem => (
-              <li>
-                <Link to={`/one_post/${elem["ID"]}`}>{elem["title"]}</Link>
-              </li>
+              <Link
+                className="col s6"
+                key={elem}
+                to={`/one_post/${elem["ID"]}`}
+              >
+                {elem["title"].toString().replace(/[0-9 ]/, "")}
+              </Link>
             ))}
-          </ul>
+          </div>
         </div>
       </div>
     );
