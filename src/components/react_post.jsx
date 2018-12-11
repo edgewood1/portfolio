@@ -3,31 +3,13 @@ import ReactDOM from 'react-dom';
 import axios from 'axios';
 import {Fragment} from 'react';
 import {Base64} from 'js-base64';
-import ReactMarkdown from 'react-markdown';
+ 
 //react-remarkable
-var Remarkable = require('remarkable');
+ 
 var showdown = require('showdown')
 
 var converter = new showdown.Converter({metadata: true});
-var md = new Remarkable({
-    html:         false,        // Enable HTML tags in source
-    xhtmlOut:     false,        // Use '/' to close single tags (<br />)
-    breaks:       false,        // Convert '\n' in paragraphs into <br>
-    langPrefix:   'language-',  // CSS language prefix for fenced blocks
-    linkify:      false,        // Autoconvert URL-like text to links
-  
-    // Enable some language-neutral replacement + quotes beautification
-    typographer:  false,
-  
-    // Double + single quotes replacement pairs, when typographer enabled,
-    // and smartquotes on. Set doubles to '«»' for Russian, '„“' for German.
-    quotes: '“”‘’',
-  
-    // Highlighter function. Should return escaped HTML,
-    // or '' if the source string is not changed
-    highlight: function (/*str, lang*/) { return ''; }
-  });
-
+ 
 class Post extends React.Component {
   state = {
     content: '', 
@@ -90,6 +72,7 @@ textStyle= {
 }
 
     render() {
+        
         var render = converter.makeHtml(this.state.content)
         var meta = converter.getMetadata()
         console.log(meta)
