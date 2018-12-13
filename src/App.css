@@ -1,20 +1,21 @@
 body {
-
-    /* background: url(images/pine.jpg) no-repeat center center fixed;
+  /* background: url(images/pine.jpg) no-repeat center center fixed;
     background-size: cover; */
-    background: #EDE574;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #E1F5C4, #EDE574);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #E1F5C4, #EDE574); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
- 
-    
-
+  background: #ede574; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #e1f5c4,
+    #ede574
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #e1f5c4,
+    #ede574
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-
 pre {
-    background-color: lightgray;
-    word-wrap: "break-word";
-    white-space: "pre-line"; 
-
+  background-color: lightgray;
+  word-wrap: "break-word";
+  white-space: "pre-line";
 }
