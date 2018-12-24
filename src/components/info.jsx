@@ -20,33 +20,37 @@ class Info extends Component {
             <div className="col s12 offset-l0">
               <p>
                 {" "}
-                As a teenager, I was into fantasy novels, writing, coding, and
-                hanging with friends. Starting college, I studied engineering
-                before switching to literature and philosophy, both of which I
-                still have a deep affinity for.{" "}
+                In college, I studied literature and philosophy and spent many
+                years teaching college writing and research classes at various
+                nearby colleges.
               </p>
             </div>
             <div className="col s12 offset-l0">
               <p>
                 {" "}
-                Since then, I've taught writing and research classes at various
-                NC colleges. I've also studied and worked as an outdoor guide at
-                a contemplative center and as an operations manager at a
-                wildcrafting & outdoor school.
+                I've also spent several years as an outdoor guide for teens as
+                well as an operations manager at a wildcrafting & outdoor
+                school.
               </p>
             </div>
             <div className="col s12 offset-l0">
               <p>
                 {" "}
-                These days, I spend most of my time exploring software / web
-                development. I appreciate the way this work integrates my past
-                interests yet allows for new forms of expression, collaboration,
-                and community.{" "}
+                These days, I spend my time with my wife, daughter, and dog.
+              </p>
+            </div>
+            <div className="col s12 offset-l0">
+              <p>
+                {" "}
+                In terms of coding, it's easy for me to see it as an extension
+                of the various forms of writing I've explored through my life.
+                To this end, I appreciate the way web development integrates my
+                past interests yet allows for new forms of expression,
+                collaboration, and community.
               </p>
             </div>
           </div>
         </div>
-        <br />
       </div>
     );
   }
