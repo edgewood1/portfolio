@@ -28,7 +28,7 @@ class Info extends Component {
             <div className="col s12 offset-l0">
               <p>
                 {" "}
-                I've also spent several years as an outdoor guide for teens as
+                I've also spent a bit of time as an outdoor guide for teens as
                 well as an operations manager at a wildcrafting & outdoor
                 school.
               </p>
@@ -44,6 +44,14 @@ class Info extends Component {
                 {" "}
                 In terms of coding, it's easy for me to see it as an extension
                 of the various forms of writing I've explored through my life.
+                To this end, I appreciate the way web development integrates my
+                past interests yet allows for new forms of expression,
+                collaboration, and community.
+              </p>
+            </div>
+            <div className="col s12 offset-l0">
+              <p>
+                {" "}
                 To this end, I appreciate the way web development integrates my
                 past interests yet allows for new forms of expression,
                 collaboration, and community.
