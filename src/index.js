@@ -16,12 +16,18 @@ import Resume2 from "./components/resume2";
 import Contact from "./components/contact";
 
 import { BrowserRouter, Route, Redirect } from "react-router-dom";
+import createHistory from "history/createBrowserHistory";
 
+// const history = createHistory()
+const history = createHistory({ basename: "/" });
+
+// Get the current location.
+// const location = history.location
 // Grabs the Routes
 // var routes = require('./config/routes');
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter history={history}>
     <div>
       <Route exact path="/" component={Home} />
       <Route exact path="/about" component={Info} />
