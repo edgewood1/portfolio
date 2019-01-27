@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Nav from "./nav";
+import Nav from "./nav.jsx";
 import axios from "axios";
 
 class Data extends Component {

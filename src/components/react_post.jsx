@@ -1,5 +1,5 @@
 import React from "react";
-import Nav from "./nav";
+import Nav from "./nav.jsx";
 import axios from "axios";
 import { Base64 } from "js-base64";
 var showdown = require("showdown");
