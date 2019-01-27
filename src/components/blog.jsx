@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import Nav from "./nav.jsx";
+import Nav from "./nav";
 
 class Blog extends React.Component {
   state = {

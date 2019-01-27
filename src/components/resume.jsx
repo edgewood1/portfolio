@@ -3,7 +3,7 @@
 
 import React, { Component } from "react";
 import { Document, Page } from "react-pdf/dist/entry.webpack";
-import Nav from "./nav.jsx";
+import Nav from "./nav";
 
 // import { Document, Page } from 'react-pdf';
 // import { Document } from 'react-pdf/dist/entry.webpack';

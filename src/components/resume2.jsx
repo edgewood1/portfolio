@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Nav from "./nav.jsx";
+import Nav from "./nav";
 
 class Apps extends Component {
   largest = {

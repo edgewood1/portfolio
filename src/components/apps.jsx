@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import GoodTunes from "./apps/goodtunes";
-import Nav from "./nav.jsx";
+import Nav from "./nav";
 
 class Apps extends Component {
   titleStyle = {

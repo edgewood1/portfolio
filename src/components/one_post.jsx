@@ -2,7 +2,7 @@ import React from "react";
 
 import axios from "axios";
 import { Fragment } from "react";
-import Nav from "./nav.jsx";
+import Nav from "./nav";
 
 class Post extends React.Component {
   state = {
