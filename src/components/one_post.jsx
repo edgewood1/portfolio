@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+
 import axios from "axios";
 import { Fragment } from "react";
 import Nav from "./nav.jsx";
@@ -24,8 +24,6 @@ class Post extends React.Component {
     const { id } = this.props.match.params;
 
     console.log(id);
-
-    var hits = [];
 
     var url =
       "https://public-api.wordpress.com/rest/v1.1/sites/code757.wordpress.com/posts/" +
