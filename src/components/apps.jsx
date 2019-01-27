@@ -5,7 +5,7 @@ import Nav from "./nav.jsx";
 class Apps extends Component {
   titleStyle = {
     fontFamily: "Garamond",
-    fontSize: "175%",
+    fontSize: "160%",
     fontWeight: "bold",
     textAlign: "center"
   };

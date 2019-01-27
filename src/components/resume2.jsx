@@ -4,25 +4,25 @@ import Nav from "./nav.jsx";
 class Apps extends Component {
   largest = {
     fontFamily: "Garamond",
-    fontSize: "200%",
+    fontSize: "165%",
     fontWeight: "bold",
     textAlign: "center"
   };
   larger = {
     fontFamily: "Garamond",
-    fontSize: "150%",
+    fontSize: "130%",
     fontWeight: "bold",
     textAlign: "center"
   };
   large = {
     fontFamily: "Garamond",
-    fontSize: "125%",
+    fontSize: "110%",
     fontWeight: "bold",
     color: "brown"
   };
   medium = {
     fontFamily: "Garamond",
-    fontSize: "125%",
+    fontSize: "110%",
     fontWeight: "bold",
     letterSpacing: ".5px"
     // color: "brown"
@@ -138,8 +138,8 @@ class Apps extends Component {
 
         <div className="container">
           <div className="row">
-            <h6 style={this.largest}> Mel DeJesus </h6>
-            <h6 style={this.larger}> 919-220-8424 </h6>
+            <p style={this.largest}> Mel DeJesus </p>
+            <p style={this.larger}> 919-220-8424 </p>
             <hr />
             <div>
               <p>

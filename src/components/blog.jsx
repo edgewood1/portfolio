@@ -42,7 +42,7 @@ class Blog extends React.Component {
   }
 
   titleStyle = {
-    fontSize: "150%",
+    fontSize: "160%",
     marginLeft: "5%",
     marginRight: "5%",
     textAlign: "center",

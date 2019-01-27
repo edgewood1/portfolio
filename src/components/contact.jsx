@@ -4,7 +4,7 @@ import Nav from "./nav.jsx";
 class Contact extends Component {
   titleStyle = {
     fontFamily: "Garamond",
-    fontSize: "170%",
+    fontSize: "160%",
     fontWeight: "bold"
   };
 

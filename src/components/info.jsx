@@ -5,7 +5,7 @@ class Info extends Component {
   titleStyle = {
     fontWeight: "bold",
     fontFamily: "Garamond",
-    fontSize: "150%",
+    fontSize: "160%",
     textAlign: "center"
   };
   textStyle = {

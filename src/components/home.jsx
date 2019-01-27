@@ -4,7 +4,7 @@ import Nav from "./nav.jsx";
 class Home extends Component {
   titleStyle = {
     fontFamily: "Garamond",
-    fontSize: "225%",
+    fontSize: "200%",
     fontWeight: "bold",
     textAlign: "center"
   };
