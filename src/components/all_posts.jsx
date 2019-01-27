@@ -1,7 +1,7 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import Nav from "./nav.jsx";
 
 class Blog extends React.Component {
   state = {
@@ -11,7 +11,7 @@ class Blog extends React.Component {
   componentWillMount() {
     const { id } = this.props.match.params;
     console.log(id);
-    if (id == "React") {
+    if (id === "React") {
       console.log("hhhiiiittt");
       var url = "/go";
       axios.get(url).then(function(res) {
@@ -31,7 +31,7 @@ class Blog extends React.Component {
     // if (id == 'React') {
     //     skip(id)
     // }
-    var hits = [];
+
     // 'https://public-api.wordpress.com/rest/v1/sites/code757.wordpress.com/posts/'
 
     var url =
@@ -46,7 +46,7 @@ class Blog extends React.Component {
         console.log(element.tags);
         if (element.tags) {
           console.log(element.tags[id].name);
-          if (element.tags[id].name == id) {
+          if (element.tags[id].name === id) {
             console.log(element);
             return element;
           }
@@ -78,7 +78,7 @@ class Blog extends React.Component {
     if (this.state.hits.length > 0) {
       console.log(Object.keys(this.state.hits[0]));
       console.log(this.state.hits[0]["title"]);
-      var title = this.state.hits[0]["title"];
+      // var title = this.state.hits[0]["title"];
     }
 
     // var keys = Object.keys(this.state.hits[0])
@@ -86,6 +86,7 @@ class Blog extends React.Component {
 
     return (
       <div>
+        <Nav />
         <p style={this.titleStyle}> Blog Categories</p>
         <div className="container" style={this.textStyle}>
           <div className="row">

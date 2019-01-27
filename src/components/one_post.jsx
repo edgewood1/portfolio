@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import axios from "axios";
 import { Fragment } from "react";
+import Nav from "./nav.jsx";
 
 class Post extends React.Component {
   state = {
@@ -58,6 +59,7 @@ class Post extends React.Component {
   render() {
     return (
       <div>
+        <Nav />
         <br />
         <div style={this.titleStyle}>{this.state.title}</div>
         <hr />

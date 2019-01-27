@@ -3,6 +3,7 @@
 
 import React, { Component } from "react";
 import { Document, Page } from "react-pdf/dist/entry.webpack";
+import Nav from "./nav.jsx";
 
 // import { Document, Page } from 'react-pdf';
 // import { Document } from 'react-pdf/dist/entry.webpack';
@@ -26,6 +27,7 @@ class Resume extends Component {
 
     return (
       <div style={this.styles}>
+        <Nav />
         <div className="container">
           <div className="row">
             <div className="center-align">

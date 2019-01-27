@@ -1,6 +1,5 @@
 import React from "react";
-
-import ReactDOM from "react-dom";
+import Nav from "./nav.jsx";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
@@ -43,6 +42,7 @@ class React_blog extends React.PureComponent {
   render() {
     return (
       <div>
+        <Nav />
         <div className="container" style={this.titleStyle}>
           <div className="row">
             <p className="col offset-s3"> React Posts </p>

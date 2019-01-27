@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import Nav from "./nav.jsx";
 import axios from "axios";
 
 class Data extends Component {
@@ -25,6 +25,7 @@ class Data extends Component {
   render() {
     return (
       <div>
+        <Nav />
         <h2> Customers </h2>
         <ul>
           {this.state.customers.map(customer => (

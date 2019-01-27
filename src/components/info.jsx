@@ -1,22 +1,26 @@
 import React, { Component } from "react";
+import Nav from "./nav.jsx";
 
 class Info extends Component {
-  styles = {
+  titleStyle = {
+    fontWeight: "bold",
     fontFamily: "Garamond",
-    fontSize: "20px"
+    fontSize: "150%",
+    textAlign: "center"
   };
-  styles2 = {
-    fontWeight: "bold"
+  textStyle = {
+    fontFamily: "Garamond",
+    fontSize: "120%"
   };
-
   render() {
     return (
-      <div style={this.styles}>
+      <div>
+        <Nav />
         <div className="container">
           <div className="row">
-            <div className="center-align">
-              <h4 style={this.styles2}> Background </h4>
-            </div>
+            <h4 style={this.titleStyle}> Background </h4>
+          </div>
+          <div style={this.textStyle}>
             <div className="col s12 offset-l0">
               <p>
                 {" "}

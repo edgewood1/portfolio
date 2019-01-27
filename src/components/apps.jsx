@@ -1,16 +1,13 @@
 import React, { Component } from "react";
 import GoodTunes from "./apps/goodtunes";
+import Nav from "./nav.jsx";
 
 class Apps extends Component {
-  styles = {
+  titleStyle = {
     fontFamily: "Garamond",
-    fontSize: "250%",
+    fontSize: "175%",
     fontWeight: "bold",
     textAlign: "center"
-  };
-
-  styles2 = {
-    fontWeight: "bold"
   };
 
   details = [
@@ -59,17 +56,20 @@ class Apps extends Component {
 
   render() {
     return (
-      <div class="container">
-        <h6 style={this.styles}> Applications </h6>
-        <hr />
-        {this.details.map((e, i) => (
-          <div>
-            <GoodTunes details={e} />
-            <br />
-            <hr />
-            <br />
-          </div>
-        ))}
+      <div>
+        <Nav />
+        <div class="container">
+          <p style={this.titleStyle}> Applications </p>
+          <hr />
+          {this.details.map((e, i) => (
+            <div>
+              <GoodTunes details={e} />
+              <br />
+              <hr />
+              <br />
+            </div>
+          ))}
+        </div>
       </div>
     );
   }

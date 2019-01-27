@@ -1,4 +1,5 @@
 import React from "react";
+import Nav from "./nav.jsx";
 import axios from "axios";
 import { Base64 } from "js-base64";
 var showdown = require("showdown");
@@ -44,9 +45,10 @@ class Post extends React.Component {
 
   render() {
     var render = converter.makeHtml(this.state.content);
-    var meta = converter.getMetadata();
+    // var meta = converter.getMetadata();
     return (
       <div>
+        <Nav />
         <div style={this.titleStyle}>{this.state.title}</div>
         <div
           style={this.textStyle}

@@ -1,7 +1,7 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import Nav from "./nav.jsx";
 
 class Blog extends React.Component {
   state = {
@@ -29,7 +29,7 @@ class Blog extends React.Component {
       console.log(data);
       data.forEach((el, i) => {
         console.log(i);
-        i % 2 == 0 ? col1.push(el) : col2.push(el);
+        i % 2 === 0 ? col1.push(el) : col2.push(el);
       });
       // this.setState({ posts: data });
       console.log(col1);
@@ -43,47 +43,47 @@ class Blog extends React.Component {
 
   titleStyle = {
     fontSize: "150%",
-    // marginLeft: '10%',
+    marginLeft: "5%",
+    marginRight: "5%",
     textAlign: "center",
-    fontWeight: "bold"
+    fontWeight: "bold",
+    fontFamily: "Garamond"
   };
   textStyle = {
     fontSize: "120%",
     marginLeft: "5%",
     marginRight: "5%",
     fontWeight: 540,
-    fontFamily: "Garamond"
+    fontFamily: "Garamond",
+    textAlign: "center"
   };
 
   render() {
     var col1 = [];
-    var x;
 
     // var b= i+1
     console.log(col1);
     return (
       <div>
-        <ul>
-          <div className="container" style={this.titleStyle}>
-            <div className="row">
-              <p className="col offset-s3"> Blog Categories </p>
-            </div>
+        <Nav />
+        <div className="container">
+          <div className="row">
+            <p style={this.titleStyle}> Blog Categories </p>
           </div>
+
           <br />
 
-          <div className="container" style={this.textStyle}>
-            <div className="row">
-              {this.state.posts.map(el => (
-                <Link className="col s6" key={el} to={`/all_posts/${el}`}>
-                  {el}
-                </Link>
-              ))}
-              <Link className="col s6" key="React" to={`/react`}>
-                React
+          <div className="row" style={this.textStyle}>
+            {this.state.posts.map(el => (
+              <Link className="col s6" key={el} to={`/all_posts/${el}`}>
+                {el}
               </Link>
-            </div>
+            ))}
+            <Link className="col s6" key="React" to={`/react`}>
+              React
+            </Link>
           </div>
-        </ul>
+        </div>
       </div>
     );
   }

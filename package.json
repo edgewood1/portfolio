@@ -9,6 +9,7 @@
     "express-favicon": "^2.0.1",
     "gh-pages": "^2.0.0",
     "js-base64": "^2.4.9",
+    "materialize-css": "^1.0.0-rc.2",
     "path": "^0.12.7",
     "pdfjs": "^2.1.0",
     "react": "^16.5.1",

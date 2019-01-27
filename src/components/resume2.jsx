@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import GoodTunes from "./apps/goodtunes";
+import Nav from "./nav.jsx";
 
 class Apps extends Component {
   largest = {
@@ -133,74 +133,81 @@ class Apps extends Component {
     var bold = { fontWeight: "bold" };
 
     return (
-      <div className="container">
-        <div className="row">
-          <h6 style={this.largest}> Mel DeJesus </h6>
-          <h6 style={this.larger}> 919-220-8424 </h6>
-          <hr />
-          <div>
-            <p>
-              {" "}
-              <span style={bold}>OBJECTIVE:</span> {intro.object}
-            </p>
+      <div>
+        <Nav />
+
+        <div className="container">
+          <div className="row">
+            <h6 style={this.largest}> Mel DeJesus </h6>
+            <h6 style={this.larger}> 919-220-8424 </h6>
             <hr />
-            <p style={this.large}> SKILLS: </p>
-            <p>
-              {" "}
-              <span style={bold}>Languages:</span> {intro.languages.join(", ")}
-            </p>
-            <p>
-              {" "}
-              <span style={bold}>Front-end:</span>{" "}
-              {intro.front_skills.join(", ")}
-            </p>
-            <p>
-              {" "}
-              <span style={bold}>Back-end:</span> {intro.back_skills.join(", ")}
-            </p>
-            <p>
-              {" "}
-              <span style={bold}>Databases:</span> {intro.databases.join(", ")}
-            </p>
-            <p>
-              {" "}
-              <span style={bold}>Personal:</span> {intro.personal.join(", ")}
-            </p>
-            <hr />
-            <p style={this.large}> EDUCATION: </p>
-            {ed.map(e => (
-              <div>
-                <p style={this.medium}>
-                  {" "}
-                  {e.pgm}, {e.time}, {e.school}
-                </p>
-                <p> {e.desc} </p>
-              </div>
-            ))}
-            <hr />
-            <p style={this.large}> WORK: </p>
-            {work.map(e => (
-              <div>
-                <p style={this.medium}>
-                  {e.pgm} -- {e.where}, {e.when}
-                </p>
-                {e.desc.map(f => (
-                  <div>
-                    <li>{f}</li>
-                  </div>
-                ))}
-              </div>
-            ))}
-            <hr />
-            <p style={this.large}> VOLUNTEER: </p>
-            {volunteer.map(e => (
-              <div>
-                <p style={this.medium}>
-                  {e.pgm}: {e.where}, {e.when}{" "}
-                </p>
-                <p> {e.desc}</p>
-              </div>
-            ))}
+            <div>
+              <p>
+                {" "}
+                <span style={bold}>OBJECTIVE:</span> {intro.object}
+              </p>
+              <hr />
+              <p style={this.large}> SKILLS: </p>
+              <p>
+                {" "}
+                <span style={bold}>Languages:</span>{" "}
+                {intro.languages.join(", ")}
+              </p>
+              <p>
+                {" "}
+                <span style={bold}>Front-end:</span>{" "}
+                {intro.front_skills.join(", ")}
+              </p>
+              <p>
+                {" "}
+                <span style={bold}>Back-end:</span>{" "}
+                {intro.back_skills.join(", ")}
+              </p>
+              <p>
+                {" "}
+                <span style={bold}>Databases:</span>{" "}
+                {intro.databases.join(", ")}
+              </p>
+              <p>
+                {" "}
+                <span style={bold}>Personal:</span> {intro.personal.join(", ")}
+              </p>
+              <hr />
+              <p style={this.large}> EDUCATION: </p>
+              {ed.map(e => (
+                <div>
+                  <p style={this.medium}>
+                    {" "}
+                    {e.pgm}, {e.time}, {e.school}
+                  </p>
+                  <p> {e.desc} </p>
+                </div>
+              ))}
+              <hr />
+              <p style={this.large}> WORK: </p>
+              {work.map(e => (
+                <div>
+                  <p style={this.medium}>
+                    {e.pgm} -- {e.where}, {e.when}
+                  </p>
+                  {e.desc.map(f => (
+                    <div>
+                      <li>{f}</li>
+                    </div>
+                  ))}
+                </div>
+              ))}
+              <hr />
+              <p style={this.large}> VOLUNTEER: </p>
+              {volunteer.map(e => (
+                <div>
+                  <p style={this.medium}>
+                    {e.pgm}: {e.where}, {e.when}{" "}
+                  </p>
+                  <p> {e.desc}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

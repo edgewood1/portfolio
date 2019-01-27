@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 
 class Contact extends Component {
-  styles = {
-    // fontFamily: "Garamond",
-    // fontSize: "20px",
+  titleStyle = {
+    fontFamily: "Garamond",
+    fontSize: "150%",
     fontWeight: "bold"
   };
 
@@ -11,7 +11,7 @@ class Contact extends Component {
     return (
       <div class="row">
         <div class="col s12 l5 offset-l1">
-          <h5 style={this.styles}> {this.props.details.title} </h5>
+          <p style={this.titleStyle}> {this.props.details.title} </p>
           {console.log(this.props.title)}
         </div>
         <div class="col s12 l5 offset-l1">
