@@ -24,7 +24,7 @@ class Apps extends Component {
       tech: "MySQL | Express | React | Node",
       desc:
         "Using a user's topic input, this app will search articles in the pages of the New York Times -- It also allows a user to save and/or delete saved articles",
-      image: require("./apps/images/roadie.png"),
+      image: require("./apps/images/NYTimes.png"),
       link: "https://nytimes-react17.herokuapp.com/"
     },
     {
