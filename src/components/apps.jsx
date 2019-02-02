@@ -24,16 +24,16 @@ class Apps extends Component {
       tech: "MySQL | Express | React | Node",
       desc:
         "Using a user's topic input, this app will search articles in the pages of the New York Times -- It also allows a user to save and/or delete saved articles",
-      image: require("./apps/images/NYTimes.png"),
+      image: require("./apps/images/roadie.png"),
       link: "https://nytimes-react17.herokuapp.com/"
     },
     {
       title: "Roadie",
-      tech: "MySQL | Express | Node | Auth-O",
+      tech: "JQuery| Express | Firebase",
       desc:
         "This app allows the user to save itineraries of past and future trips.",
       image: require("./apps/images/roadie.png"),
-      link: "https://roadie2017.herokuapp.com/"
+      link: "http://157.230.82.251:3005/"
     },
     {
       title: "Books to Movies",
