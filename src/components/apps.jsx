@@ -17,7 +17,8 @@ class Apps extends Component {
       desc:
         "This app gathers new song recommendations from various music sites - It also allows a user to rate and save select songs to a playlist.",
       image: require("./apps/images/goodTunes.png"),
-      link: "https://warm-depths-30010.herokuapp.com/"
+      // link: "https://warm-depths-30010.herokuapp.com/"
+      link: "http://157.230.82.251:3001/"
     },
     {
       title: "New York Times API",

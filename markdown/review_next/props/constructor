@@ -1,0 +1,74 @@
+the constructor of a React component is executed once the first time the component is mounted, or instantiated. It is never called again in subsequent renders.
+
+Typically the constructor is used to set-up a component's internal state, for example:
+
+constructor () {
+  super()
+  this.state = {
+    // internal state
+  }
+}
+Or if you have the class property syntax available (e.g. via Babel) you can forgo declaring a constructor if all you are using it for is to initialise the state:
+
+class Example extends React.Component {
+  state = {
+    // internal state
+  }
+}
+Does the constructor(props) line has something to do with the rendering of the component together with its props?
+
+The constructor does not directly dictate what is rendered by a component.
+
+What is rendered by a component is defined by the return value of its render method.
+
+If you don’t initialize state and you don’t bind methods, you don’t need to implement a constructor for your React component.
+
+The constructor for a React component is called before it is mounted. When implementing the constructor for a React.Component subclass, you should call super(props) before any other statement. Otherwise, this.props will be undefined in the constructor, which can lead to bugs.
+
+Typically, in React constructors are only used for two purposes:
+
+Initializing local state by assigning an object to this.state.
+Binding event handler methods to an instance.
+
+https://stackoverflow.com/questions/40433463/what-does-calling-super-in-a-react-constructor-do
+
+Most Common Use Case For Constructor: Setting up state, creating refs and method binding.
+
+
+If you were to create a Child class, it would not inherit the props or state object of Welcome. 
+
+To do this, you'd have to write: 
+
+7. What is another way of writing a class component?
+
+We could use a constructor function. Below, we inherit inputs from previous classes, bind an event, and set our state:
+
+```jsx
+  constructor(props) {
+    super(props);
+    this.handleMouseMove = this.handleMouseMove.bind(this);
+    this.state = { x: 0, y: 0 };
+  }
+```
+
+In a constructor, we can define state, get props, and do any other setup. It's a useful function since it's the first of our lifecycle methods to be used.
+
+For more on this, see the discussion on classes.
+
+A few terms to be discussed later:
+
+Extends – used in class declarations to create a class as a child of another class. If there is a constructor in the subclass, it needs to call super() before using ‘this’.
+
+Constructor – a method that creates an object.
+
+super() - this is used if the class has a parent class that it will inherit from. This calls the constructor of the parent class.
+
+Calling super() is necessary only if you need to have a constructor. Take a look at this code:
+
+The reason why this cannot be allowed before super() is because this is uninitialized if super() is not called [1]
+
+ES6 class constructors MUST call super if they are subclasses. Thus, you have to call super() as long as you have a constructor. (But a subclass does not have to have a constructor)
+
+Call super(props) only if you want to access this.props inside the constructor. React automatically set it for you if you want to access it anywhere else.
+
+There is no need to pass props into the constructor if you want to use it in other places. Because React automatically set it for you [2]
